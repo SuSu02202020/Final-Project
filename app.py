@@ -1,18 +1,40 @@
-import flask
-from flask import request, jsonify
-import weather_api
+from flask import Flask, render_template, url_for
 
-app = flask.Flask(__name__)
-app.config["DEBUG"] = True
+app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+# posts = [    {
+#         'author': 'Corey Schafer',
+#         'title': 'Blog Post 1',
+#         'content': 'First post content',
+#         'date_posted': 'April 20, 2018'
+#     },
+#     {
+#         'author': 'Jane Doe',
+#         'title': 'Blog Post 2',
+#         'content': 'Second post content',
+#         'date_posted': 'April 21, 2018'
+#     }]
+
+
+@app.route("/")
+@app.route("/home")
 def home():
-    return "<h1>Distant Reading Archive</h1><p>This site is a prototype API for distant reading of science fiction novels.</p>"
+    return render_template('home.html', posts=posts)
 
-@app.route('/weather', methods=['GET'])
-def weather():
-    wetherData = weather_api.API_Call()
-    return wetherData
 
-if __name__ == "__main__":
-   app.run(debug=True)
+@app.route("/about")
+def about():
+    return render_template('about.html', title='About')
+
+
+@app.route("/bottom_3")
+def bottom_3():
+    return render_template('about.html', title='About')
+
+
+@app.route("/bottom_4")
+def bottom_4():
+    return render_template('about.html', title='About')
+
+if __name__ == '__main__':
+    app.run(debug=True)
