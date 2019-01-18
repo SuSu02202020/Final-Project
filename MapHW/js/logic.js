@@ -24,7 +24,7 @@ var baseMaps = {
 // Create the map object with options
 var map = L.map("map-id", {
   center: [40.73, -74.0059],
-  zoom: 3,
+  zoom: 10,
   layers: [darkmap]
 });
    // // Create a layer control, pass in the baseMaps and overlayMaps. Add the layer control to the map
@@ -36,9 +36,9 @@ var map = L.map("map-id", {
 
 
 function cityZip (feature,layer) {
-    layer.bindPopup("<h1 class='infoHeader'> info window</h1><p class='infoHeader'>"
-    +feature.properties.postalCode +
-    +feature.properties.PO_NAME + "</p>");
+    layer.bindPopup(
+    "Zipcode: " +feature.properties.postalCode +"<br> City: "+
+    feature.properties.PO_NAME);
 
   };
 
