@@ -27,12 +27,11 @@ body {
   }
 
   .slidd { position: fixed;
-    background: none;  
-    color:black;
-    /* width: 100%; 
+    background: black; 
+    width: 100%; 
     padding: 0px; 
     margin: 0px; 
-    border: 0px;  */
+    border: 0px; 
   }
 
   .navbar-custom {
