@@ -1,4 +1,6 @@
 
+  //nav bar //
+
   // Create the tile layer that will be the background of our map
   var lightmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"http://mapbox.com\">Mapbox</a>",
@@ -45,3 +47,24 @@ function cityZip (feature,layer) {
   L.geoJson(zipcode_json,{
     onEachFeature: cityZip
   }).addTo(map);
+
+
+
+  if ( $(window).width() > 769) {   
+    var mywindow = $(window);
+    var mypos = mywindow.scrollTop();
+    var up = false;
+    var newscroll;
+    mywindow.scroll(function () {
+        newscroll = mywindow.scrollTop();
+        if (newscroll > mypos && !up) {
+            $('.slidd').stop().fadeOut(730);
+            up = !up;
+            console.log(up);
+        } else if(newscroll < mypos && up) {
+            $('.slidd').stop().fadeIn(300);
+            up = !up;
+        }
+        mypos = newscroll;
+    });
+    }
