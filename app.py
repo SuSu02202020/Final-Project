@@ -1,6 +1,13 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, redirect,url_for
+from flask_pymongo import PyMongo
+import subway
 
+# create instance of Flask app
 app = Flask(__name__)
+
+# Use flask_pymongo to set up mongo connection
+app.config["MONGO_URI"] = "mongodb://localhost:27017/app.py"
+mongo = PyMongo(app)
 
 # posts = [    {
 #         'author': 'Corey Schafer',
