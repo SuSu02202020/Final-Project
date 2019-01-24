@@ -1,0 +1,5 @@
+mysql_host: " localhost"
+mysql_user: "root"
+mysql_pass: " "
+#  the name of the databas in mysql
+mysql_db: " "
