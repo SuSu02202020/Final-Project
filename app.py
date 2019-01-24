@@ -28,22 +28,21 @@ from sqlalchemy import create_engine, inspect
 # for column in columns:
 #     print(column["name"], column["type"])
 
-<<<<<<< HEAD
 # =======
 # from flask import Flask, render_template, redirect,url_for
 # from flask_pymongo import PyMongo
 # import subway
 # >>>>>>> Engy
-=======
+
 # from flask import Flask, render_template, redirect,url_for
 # from flask_pymongo import PyMongo
 # import subway
->>>>>>> Temp_Branch
+
 
 # create instance of Flask app
 app = Flask(__name__)
 
-<<<<<<< HEAD
+
 # # config db
 # # db = yaml.load(open('db.yaml'))
 # # app.config['MYSQL_HOST'] = db['mysql_host']
@@ -61,36 +60,34 @@ app = Flask(__name__)
 # # Use flask_pymongo to set up mongo connection
 # app.config["MONGO_URI"] = "mongodb://localhost:27017/app.py"
 # mongo = PyMongo(app)
-=======
->>>>>>> Temp_Branch
+
 
 #  rootes
 @app.route("/")
 def Home():
     return render_template('Home.html')
 
-<<<<<<< HEAD
-# mysql = MySQL(app)
 
-#  rootes
-@app.route("/")
-def Home():
-    return render_template('Home.html')
+# # mysql = MySQL(app)
 
-@app.route("/bottom_1")
-def ML_1():
-    sqlcolum = subway.sub_data()
-    return sqlcolum
+# #  rootes
+# @app.route("/")
+# def Home():
+#     return render_template('Home.html')
+
+# @app.route("/bottom_1")
+# def ML_1():
+#     sqlcolum = subway.sub_data()
+#     return sqlcolums
     # return render_template('home.html')
 
-=======
-@app.route("/bottom_1")
-def ML_1():
-    sqlcolum = subway.sub_data()
-    return sqlcolum
-    # return render_template('home.html')
 
->>>>>>> Temp_Branch
+# @app.route("/bottom_1")
+# def ML_1():
+#     sqlcolum = subway.sub_data()
+#     return sqlcolum
+#     # return render_template('home.html')
+
 
 @app.route("/bottom_2")
 def ML_2():

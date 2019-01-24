@@ -39,12 +39,4 @@ def sub_data ():
 
 
     return str(df)
-=======
 
->>>>>>> Engy
-<<<<<<< HEAD
-=======
-
->>>>>>> ef67ea1645c13f1d4664bc22201d0f71a1d40d22
-=======
->>>>>>> Temp_Branch
