@@ -1,12 +1,14 @@
+html,
+
 body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  /* h1, h2, h3, h4, h5, h6 {
     color: #444444;
-  }
+  } */
   
   .bg-steel {
     background-color: #4b95c8;
@@ -22,6 +24,20 @@ body {
   
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
+  }
+
+  .slidd { position: fixed;
+    background: black; 
+    width: 100%; 
+    padding: 0px; 
+    margin: 0px; 
+    border: 0px; 
+  }
+
+  .navbar-custom {
+    background-color: #0c4d8a !important;
+    color: #ffffff;
+    border-radius: 0;
   }
   
   .content-section {
@@ -80,7 +96,13 @@ body {
   }
 
   .sub_img {
-    height: auto; 
+    height: 100%; 
+    width: 100%;
+    vertical-align:center;
+  }
+
+  .tableau_img{
+    height: 100%; 
     width: 100%;
     vertical-align:center;
   }

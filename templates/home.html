@@ -1,16 +1,12 @@
-
-{% extends "layout.html" %}
+{% extends "Parent.html" %}
 {% block content %}
-    {% for post in posts %}
-        <article class="media content-section">
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="#">{{ post.author }}</a>
-              <small class="text-muted">{{ post.date_posted }}</small>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class="img">
+                <img class="sub_img" src="/static/86th_Street_Second_Av._Subway_Station_Unveiled_(31863534822).jpg">
             </div>
-            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
-          </div>
-        </article>
-    {% endfor %}
-{% endblock content %}
+        </div>
+      </div>
+    </main>
+{% endblock %}
