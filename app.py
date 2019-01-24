@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 from flask import Flask, render_template, request, redirect, jsonify,  url_for
 # from flask_mysqldb import MySQL
@@ -7,7 +6,7 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, inspect
-import subway
+# import subway
 #################################################
 # Database Setup
 #################################################
@@ -29,42 +28,13 @@ import subway
 # for column in columns:
 #     print(column["name"], column["type"])
 
-=======
-from flask import Flask, render_template, redirect,url_for
-from flask_pymongo import PyMongo
-import subway
->>>>>>> Engy
+# from flask import Flask, render_template, redirect,url_for
+# from flask_pymongo import PyMongo
+# import subway
 
 # create instance of Flask app
 app = Flask(__name__)
 
-<<<<<<< HEAD
-# config db
-# db = yaml.load(open('db.yaml'))
-# app.config['MYSQL_HOST'] = db['mysql_host']
-# app.config['MYSQL_USER'] = db['mysql_user']
-# app.config['MYSQL_PASSWORD'] = db['mysql_password']
-# app.config['MYSQL_DB'] = db['mysql_db']
-=======
-# Use flask_pymongo to set up mongo connection
-app.config["MONGO_URI"] = "mongodb://localhost:27017/app.py"
-mongo = PyMongo(app)
-
-# posts = [    {
-#         'author': 'Corey Schafer',
-#         'title': 'Blog Post 1',
-#         'content': 'First post content',
-#         'date_posted': 'April 20, 2018'
-#     },
-#     {
-#         'author': 'Jane Doe',
-#         'title': 'Blog Post 2',
-#         'content': 'Second post content',
-#         'date_posted': 'April 21, 2018'
-#     }]
->>>>>>> Engy
-
-# mysql = MySQL(app)
 
 #  rootes
 @app.route("/")
