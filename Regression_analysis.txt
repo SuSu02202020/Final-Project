@@ -1,0 +1,61 @@
+
+No Holiday with Temp, Time, day, month: looks linear in nature 
+
+linear_model
+R^2 is: 
+ 0.308579225913
+
+RMSE is: 
+ 14704.3999456
+
+DecisionTreeRegressor
+R^2 is: 
+ 0.514707171718
+RMSE is: 
+ 14704.3999456
+
+RandomForestRegressor
+R^2 is: 
+ 0.529097113561
+RMSE is: 
+ 14704.3999456
+
+Holiday with Temp, Time, day, month: looks linear in nature: has six lines in groups of twos
+
+linear_model
+R^2 is: 
+ 0.0586845069423
+RMSE is: 
+ 20018.8944326
+
+DecisionTreeRegressor
+R^2 is: 
+ 0.357103334921
+RMSE is: 
+ 20018.8944326
+
+RandomForestRegressor
+R^2 is: 
+ 0.344820982679
+RMSE is: 
+ 20018.8944326
+
+Holiday with Humidity, Time, day, month: looks linear in nature 
+linear_model
+R^2 is: 
+ 0.0669509545361
+
+RMSE is: 
+ 19843.0924375
+
+DecisionTreeRegressor
+R^2 is: 
+ 0.271455778955
+RMSE is: 
+ 19843.0924375
+
+RandomForestRegressor
+R^2 is: 
+ 0.262330877557
+RMSE is: 
+ 19843.0924375
