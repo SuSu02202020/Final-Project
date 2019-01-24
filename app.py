@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 from flask import Flask, render_template, request, redirect, jsonify,  url_for
 # from flask_mysqldb import MySQL
@@ -46,6 +47,15 @@ app = Flask(__name__)
 # app.config['MYSQL_PASSWORD'] = db['mysql_password']
 # app.config['MYSQL_DB'] = db['mysql_db']
 =======
+=======
+from flask import Flask, render_template, redirect,url_for
+from flask_pymongo import PyMongo
+import subway
+
+# create instance of Flask app
+app = Flask(__name__)
+
+>>>>>>> ef67ea1645c13f1d4664bc22201d0f71a1d40d22
 # Use flask_pymongo to set up mongo connection
 app.config["MONGO_URI"] = "mongodb://localhost:27017/app.py"
 mongo = PyMongo(app)

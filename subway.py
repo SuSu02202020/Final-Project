@@ -9,6 +9,7 @@ import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import seaborn as sns
 <<<<<<< HEAD
+<<<<<<< HEAD
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, inspect
@@ -38,3 +39,6 @@ def sub_data ():
 =======
 
 >>>>>>> Engy
+=======
+
+>>>>>>> ef67ea1645c13f1d4664bc22201d0f71a1d40d22
