@@ -72,12 +72,13 @@ def Home():
 def ML_1():
 #     sqlcolum = subway.sub_data()
 #     return sqlcolums
-    return render_template('Home.html')
+    return render_template('Python_Charts.html')
 
 
 @app.route("/bottom_2")
 def ML_2():
     return render_template('ML_2.html')
+    
 
 # @app.route('/', methods=['GET', 'POST'])
 # def index():    
