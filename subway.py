@@ -9,6 +9,10 @@ import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import seaborn as sns
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Temp_Branch
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, inspect
@@ -35,6 +39,4 @@ def sub_data ():
 
 
     return str(df)
-=======
 
->>>>>>> Engy
