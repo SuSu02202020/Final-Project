@@ -39,8 +39,8 @@ var map = L.map("map-id", {
 
 function cityZip (feature,layer) {
     layer.bindPopup(
-    "Zipcode: " +feature.properties.postalCode +"<br> City: "+
-    feature.properties.PO_NAME);
+      "Zipcode: " +feature.properties.postalCode +"<br> Post Office: "+
+      feature.properties.PO_NAME+"<br> Borough: "+feature.properties.borough);
 
   };
 
