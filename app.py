@@ -68,35 +68,22 @@ def Home():
     return render_template('Home.html')
 
 
-# # mysql = MySQL(app)
-
-# #  rootes
-# @app.route("/")
-# def Home():
-#     return render_template('Home.html')
-
-# @app.route("/bottom_1")
-# def ML_1():
+@app.route("/bottom_1")
+def ML_1():
 #     sqlcolum = subway.sub_data()
 #     return sqlcolums
-    # return render_template('home.html')
-
-
-# @app.route("/bottom_1")
-# def ML_1():
-#     sqlcolum = subway.sub_data()
-#     return sqlcolum
-#     # return render_template('home.html')
+    return render_template('Home.html')
 
 
 @app.route("/bottom_2")
 def ML_2():
-    return render_template('about.html')
+    return render_template('ML_2.html')
 
 # @app.route('/', methods=['GET', 'POST'])
 # def index():    
 
 
+#  Navbar Right
 @app.route("/bottom_3")
 def bottom_3():
     return render_template('leaflet.html')
